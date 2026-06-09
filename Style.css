@@ -1,0 +1,194 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  background-color: hsl(204, 43%, 93%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+
+.card {
+  width: 100%;
+  max-width: 635px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 81, 107, 0.2);
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+
+.card-top {
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.card-top h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 18px;
+}
+
+.card-top h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 16px;
+}
+
+.card-top p {
+  font-size: 16px;
+  color: hsl(218, 22%, 67%);
+  line-height: 1.7;
+}
+
+
+.card-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.card-subscription {
+  background-color: hsl(179, 62%, 43%);
+  padding: 40px;
+}
+
+.card-subscription h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.amount {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.per-month {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card-subscription p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 30px;
+}
+
+.card-subscription button {
+  width: 100%;
+  padding: 16px;
+  background-color: hsl(71, 73%, 54%);
+  color: #ffffff;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.5px;
+}
+
+.card-subscription button:hover {
+  background-color: hsl(71, 73%, 70%);
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-subscription input,
+.card-subscription textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Karla', sans-serif;
+  font-size: 15px;
+  color: hsl(179, 62%, 43%);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-subscription textarea {
+  height: 90px;
+  resize: none;
+}
+
+
+#successMsg,
+#contactMsg {
+  display: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 16px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 12px;
+  border-radius: 6px;
+}
+
+
+.card-why-us {
+  background-color: hsl(179, 47%, 52%);
+  padding: 40px;
+}
+
+.card-why-us h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.card-why-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card-why-us ul li {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+
+footer {
+  margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card-bottom {
+    grid-template-columns: 1fr;
+  }
+}
